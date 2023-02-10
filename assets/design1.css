@@ -1,0 +1,97 @@
+*{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    background-image: url("img/design1_image1.jpg");
+    min-height: 32vh;
+    min-width: 100vw;
+    background-origin: content-box;
+    background-position-y: -30vh;
+}
+
+header h1{
+    padding:10px;
+    vertical-align: top;
+    font-size: 3.7rem;
+    font-weight: 400;
+}
+
+.separator{
+    background-color: black;
+    min-height: 8vh;
+    text-align: center;
+    position: relative;
+    top:0px;
+}
+
+.separator h2{
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: inline-block;
+}
+
+.separator img{
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: -3vw;
+    background-color: white;
+    border:0.2rem solid black;
+    max-width: 10vw;
+    min-width: 5rem;
+    width: 10vw;
+}
+
+
+nav{
+    width: w0vw;
+    display: inline-block;
+    min-height: 50vh;
+    padding: 1rem;
+    padding-top: 2rem;
+    vertical-align: top;
+}
+
+nav a{
+    display: block;
+    padding-bottom: 3rem;
+}
+
+main h3{
+    font-weight: 600;
+}
+
+
+main{
+    display: inline-block;
+    min-height: 50vh;
+    padding: 2rem;
+    max-width: 80vw;
+}
+
+main p{
+    margin-left: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+footer{
+    min-height: 10vh;
+}
