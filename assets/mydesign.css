@@ -12,7 +12,7 @@ html{
 
 body{
     min-height: 100vh;
-    background-color: rgb(245, 237, 177);
+    background-color: white;
 }
 
 header{
@@ -29,12 +29,13 @@ header{
 header h1{
     padding:1vh;
     padding-right: 1rem;
-    font-size: 5vh;
+    font-size: 4.5vh;
     font-weight: 900;
     width: 100%;
-    background-color: rgb(95, 161, 153);
+    background-color: rgb(33, 25, 21);
     text-align: right;
     color: rgb(248, 225, 46);
+    text-transform: uppercase;
     text-shadow: 1px  0px 0px rgb(198, 72, 50),
                0px  1px 0px rgb(198, 72, 50),
               -1px  0px 0px rgb(198, 72, 50),
@@ -44,8 +45,9 @@ header h1{
 .separator{
     min-height: 8vh;
     text-align: center;
-    background-color: rgb(33, 25, 21);
+    background-color: rgb(95, 161, 153);
     border: 1px solid rgb(198, 72, 50);
+    border-bottom: 10px solid rgb(198, 72, 50);
     color: white;
 }
 
@@ -56,6 +58,10 @@ header h1{
     padding-bottom: 10px;
     display: inline-block;
     color: white;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
 }
 
 .separator img{
@@ -75,11 +81,13 @@ nav{
     padding: 1rem;
     padding-top: 2rem;
     vertical-align: top;
-    background-color: rgb(248, 225, 46);
+    background-color: rgb(33, 25, 21);
+    border: 2px solid rgb(198, 72, 50);
+    border-top-width: 0;
+    border-bottom-width: 9px;
 }
 
 nav a{
-    background-color: rgb(198, 72, 50);
     border-radius: 20px 20px 0 0;
     padding: 5px;
     display: block;
@@ -88,6 +96,12 @@ nav a{
     font-weight:700;
     text-align:center;
     text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+    border: 1px solid rgb(198, 72, 50);
 }
 
 a{
@@ -108,6 +122,7 @@ nav a:active{
 
 nav a:visited{
     color: white;
+    
 }
 
 nav a:focus{
@@ -116,6 +131,10 @@ nav a:focus{
 
 nav a:hover{
     background-color: rgb(219, 96, 74)
+}
+
+nav a[href="#"]{
+    color: rgb(248, 225, 46);
 }
 
 main h3{
@@ -130,7 +149,6 @@ main h2{
 
 main{
     display: inline-block;
-    min-height: 50vh;
     padding: 2rem;
     max-width: 70vw;
 }
@@ -142,5 +160,6 @@ main p{
 
 footer{
     min-height: 5vh;
-    background-color: rgb(198, 72, 50);
+    background-color: rgb(248, 225, 46);
+    border: 1px solid rgb(198, 72, 50);
 }
