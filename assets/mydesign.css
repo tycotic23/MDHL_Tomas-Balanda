@@ -47,7 +47,6 @@ header h1{
 .separator{
     min-height: 6vh;
     text-align: center;
-    background-color: rgb(95, 161, 153);
     border: 1px solid rgb(198, 72, 50);
     border-bottom: 10px solid rgb(198, 72, 50);
     color: white;
@@ -176,6 +175,5 @@ main p{
 
 footer{
     min-height: 5vh;
-    background-color: rgb(248, 225, 46);
     background-color: rgb(198, 72, 50);
 }
