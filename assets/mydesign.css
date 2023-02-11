@@ -32,27 +32,36 @@ header h1{
     font-size: 4.5vh;
     font-weight: 900;
     width: 100%;
-    background-color: rgb(33, 25, 21);
+    background-color: rgb(95, 161, 153);
     text-align: right;
     color: rgb(248, 225, 46);
     text-transform: uppercase;
+    border-bottom: 1px solid rgb(198, 72, 50);
     text-shadow: 1px  0px 0px rgb(198, 72, 50),
                0px  1px 0px rgb(198, 72, 50),
               -1px  0px 0px rgb(198, 72, 50),
                0px -1px 0px rgb(198, 72, 50);
+               
 }
 
 .separator{
-    min-height: 8vh;
+    min-height: 6vh;
     text-align: center;
     background-color: rgb(95, 161, 153);
     border: 1px solid rgb(198, 72, 50);
     border-bottom: 10px solid rgb(198, 72, 50);
     color: white;
+    background-color: rgb(248, 225, 46);
+    text-transform: uppercase;
+}
+
+.separator h2:hover{
+    transform: Scale(1.2);
 }
 
 .separator h2{
     font-weight: 800;
+    transition: all 0.3s;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -71,6 +80,11 @@ header h1{
     top: 9vh;
     min-height: 20vh;
     height: 30vh;
+    transition: all 0.6s;
+}
+
+.separator img:hover{
+    transform: rotatez(-40deg);
 }
 
 
@@ -102,6 +116,7 @@ nav a{
               -1px  0px 0px black,
                0px -1px 0px black;
     border: 1px solid rgb(198, 72, 50);
+    transition: all 0.2s;
 }
 
 a{
@@ -114,6 +129,8 @@ a:visited{
 
 a:hover{
     color:rgb(219, 96, 74);
+    font-weight: 600;
+    transform: rotatez(5deg);
 }
 
 nav a:active{
@@ -139,7 +156,6 @@ nav a[href="#"]{
 
 main h3{
     font-weight: 600;
-    color: rgb(198, 72, 50);
 }
 
 main h2{
@@ -161,5 +177,5 @@ main p{
 footer{
     min-height: 5vh;
     background-color: rgb(248, 225, 46);
-    border: 1px solid rgb(198, 72, 50);
+    background-color: rgb(198, 72, 50);
 }
