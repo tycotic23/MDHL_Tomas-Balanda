@@ -9,6 +9,13 @@
 html{
     overflow: auto;
 }
+.container{
+    display:flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    background-image: url("img/design1_image2.jpg");
+    /*outline: 1px solid red;*/
+}
 
 body{
     min-height: 100vh;
@@ -88,9 +95,8 @@ header h1{
 
 
 nav{
-    min-width: 15vw;
-    display: inline-block;
-    min-height: 50vh;
+    margin-left: 1vw;
+    min-width: 12rem;
     padding: 1rem;
     padding-top: 2rem;
     vertical-align: top;
@@ -163,9 +169,16 @@ main h2{
 
 
 main{
-    display: inline-block;
     padding: 2rem;
     max-width: 70vw;
+    flex-grow: 1;
+    margin-right: 5vw;
+    margin-left: 2vw;
+    background-color: rgba(255, 255, 255, 0.815);
+    margin-top:4vh;
+    margin-bottom: 2vh;
+    border-radius: 40px;
+    border: 2px solid rgb(198, 72, 50);
 }
 
 main p{
