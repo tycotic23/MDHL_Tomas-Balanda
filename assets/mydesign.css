@@ -8,7 +8,6 @@
 
 html{
     overflow: auto;
-    overflow-x: scroll;
 }
 .container{
     display:flex;
