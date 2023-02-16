@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon/Logo Mighty ducks-01.png" type="image/x-icon">
+    <!--<link rel="stylesheet" href="assets/design1.css">-->
+    <link rel="stylesheet" href="assets/mydesign.css">
+</head>
+<body>
+    <!-- banner-->
+    <header>
+        <h1>Mighty Ducks Hockey League</h1>
+        <img src="assets/favicon/Logo Mighty ducks-01.png" alt="logo de Mighty Ducks">
+    </header>
+    <section class="separator">
+        <h2>Registration</h2>
+        
+    </section>
+    <div class="container">
+        <nav>
+            <a href="home.html">Home</a> <a href="about.html">About MDHL</a><a href="contact.html">Contact</a> <a href="schedule.html">Schedule Fall</a> <a href="rules.html">Rules and Policies</a><a class="importante" href="#">Registration Form</a>
+        </nav>
+        <main>
+        <form action="">
+            <fieldset>
+                <legend>Registration form</legend>
+                <table class="formulario">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="nombre">Player's First:
+                                <input class="c" type="text" name="nombre" id="nombre" required></label>
+                            </td>
+                            <td>
+                                <label for="apellido">Last Name:
+                                <input class="c" type="text" name="apellido" id="apellido" required></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="adress">Street Adress:
+                                <input type="text" name="adress" id="adress" required></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">City:
+                                <input class="c" type="text" name="city" id="city" required></label>
+                            </td>
+                            <td>
+                                <label for="zip">Zip code:
+                                <input type="text" name="zip" id="zip" required></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="birth">Birthday:
+                                <input type="date" name="birth" id="birth" required></label>
+                            </td>
+                            <td>
+                                <label for="gender">Zip Gender:
+                                <input type="radio" name="gender" id="gender" required></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="grade">Grade:
+                                <input type="radio" name="grade" id="grade" required></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><button type="submit">Enviar</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </form>
+        </main>
+        
+    </div>
+    <footer></footer>
+</body>
+</html>
