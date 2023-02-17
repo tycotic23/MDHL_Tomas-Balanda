@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/favicon/Logo Mighty ducks-01.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/Logo.png" type="image/x-icon">
     <!--<link rel="stylesheet" href="assets/design1.css">-->
     <link rel="stylesheet" href="assets/mydesign.css">
 </head>
@@ -16,7 +16,7 @@
     <!-- banner-->
     <header>
         <h1>Mighty Ducks Hockey League</h1>
-        <img src="assets/favicon/Logo Mighty ducks-01.png" alt="logo de Mighty Ducks">
+        <img src="assets/favicon/Logo.png" alt="logo de Mighty Ducks">
     </header>
     <section class="separator">
         <h2>Registration</h2>
@@ -47,9 +47,9 @@
                         <td>
                             <div class="filaform">
                                 <h4>Gender:</h4>
-                                <label for="gender">Female:
+                                <label for="Female">Female:
                                 <input type="radio" name="gender" id="Female" value="Female" required></label>
-                                <label for="gender">Male:
+                                <label for="Male">Male:
                                 <input type="radio" name="gender" id="Male" value="Male" required></label>
                             </div>
                         </td>
@@ -58,7 +58,7 @@
                         <td colspan="2">
                             <div class="filaform">
                                 <h4>Grade:</h4>
-                                <label for="pre"> <input type="radio" name="grade" id="pre" id="pre" required> Pre-School</label>
+                                <label for="pre"> <input type="radio" name="grade" id="pre" value="pre" required> Pre-School</label>
                                 <label for="1"> <input type="radio" name="grade" id="1" value="1" required> 1st</label>
                                 <label for="2"> <input type="radio" name="grade" id="2" value="2" required> 2st</label>
                                 <label for="3"> <input type="radio" name="grade" id="3" value="3" required> 3st</label>
@@ -71,23 +71,18 @@
             </fieldset>
             <fieldset>
                 <legend>Which elementary school do you live near?</legend>
-                <table class="formulario">
-                        <tr>
-                            <td colspan="2"><h4><span>Closest School:</span></h4></td>
-                        </tr>
-                        <tr>
-                            <td> <div class="filaform"><label for="aj"> <input type="radio" name="school" id="aj" value="aj" required> AJ Katzenmaier</label></div></td>
-                            <td> <div class="filaform"><label for="mp"> <input type="radio" name="school" id="mp" value="mp" required>Marjorie P Hart</label></div></td>
-                        </tr>
-                        <tr>
-                            <td><div class="filaform"><label for="gr"> <input type="radio" name="school" id="gr" value="gr" required>Greenbay</label></div></td>
-                            <td><div class="filaform"><label for="ne"> <input type="radio" name="school" id="ne" value="ne" required> North Elementary</label></div></td>
-                        </tr>
-                        <tr>
-                            <td><div class="filaform"><label for="hy"> <input type="radio" name="school" id="hy" value="hy" required> Howard A Yeager</label></div></td>
-                            <td><div class="filaform"><label for="se"> <input type="radio" name="school" id="se" value="se" required>South Elementary</label></div></td>
-                        </tr>
-                </table>
+                <div class="filaform">
+                    <h4><span>Closest School:</span></h4>
+                    <select name="school" id="school">
+                        <option value=""> Choose a school</option>
+                        <option value="aj">AJ Katzenmaier</option>
+                        <option value="mp">Marjorie P Hart</option>
+                        <option value="gr">Greenbay</option>
+                        <option value="ne">North Elementary</option>
+                        <option value="hy">Howard A Yeager</option>
+                        <option value="se">South Elementary</option>
+                    </select>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>What position(s) do you normally play? (check all that apply)</legend>
@@ -118,7 +113,7 @@
                             <td><div class="filaform"><label for="sxl"> <input type="radio" name="size" id="sxl" value="sxl" required> Extra-Large</label></div></td>
                         </tr>
                         <tr>
-                            <td><div class="filaform"><label for="ss"> <input type="radio" name="size" id="ss"  value="ss" required>Small</label></div></td>
+                            <td colspan="2"><div class="filaform"><label for="ss"> <input type="radio" name="size" id="ss"  value="ss" required>Small</label></div></td>
                         </tr>
                 </table>
             </fieldset>
