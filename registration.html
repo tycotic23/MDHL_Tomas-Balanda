@@ -27,64 +27,117 @@
             <a href="home.html">Home</a> <a href="about.html">About MDHL</a><a href="contact.html">Contact</a> <a href="schedule.html">Schedule Fall</a> <a href="rules.html">Rules and Policies</a><a class="importante" href="#">Registration Form</a>
         </nav>
         <main>
-        <form action="">
+        <form action="show_data.html">
+            <h2 class="ini">Registration form</h2>
             <fieldset>
-                <legend>Registration form</legend>
                 <table class="formulario">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label for="nombre">Player's First:
-                                <input class="c" type="text" name="nombre" id="nombre" required></label>
-                            </td>
-                            <td>
-                                <label for="apellido">Last Name:
-                                <input class="c" type="text" name="apellido" id="apellido" required></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <label for="adress">Street Adress:
-                                <input type="text" name="adress" id="adress" required></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="city">City:
-                                <input class="c" type="text" name="city" id="city" required></label>
-                            </td>
-                            <td>
-                                <label for="zip">Zip code:
-                                <input type="text" name="zip" id="zip" required></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="birth">Birthday:
-                                <input type="date" name="birth" id="birth" required></label>
-                            </td>
-                            <td>
-                                <label for="gender">Zip Gender:
-                                <input type="radio" name="gender" id="gender" required></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <label for="grade">Grade:
-                                <input type="radio" name="grade" id="grade" required></label>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"><button type="submit">Enviar</button></td>
-                        </tr>
-                    </tfoot>
+                    <tr>
+                        <td><label for="nombre">Player's First: <input class="c" type="text" name="nombre" id="nombre" required></label></td>
+                        <td><label for="apellido">Last Name:<input class="c" type="text" name="apellido" id="apellido" required></label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="adress">Street Adress:<input type="text" name="adress" id="adress" required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City:<input class="c" type="text" name="city" id="city" required></label></td>
+                        <td><label for="zip">Zip code:<input type="text" name="zip" id="zip" required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birth">Birthday: <input type="date" name="birth" id="birth" required></label></td>
+                        <td>
+                            <div class="filaform">
+                                <h4>Gender:</h4>
+                                <label for="gender">Female:
+                                <input type="radio" name="gender" id="Female" value="Female" required></label>
+                                <label for="gender">Male:
+                                <input type="radio" name="gender" id="Male" value="Male" required></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="filaform">
+                                <h4>Grade:</h4>
+                                <label for="pre"> <input type="radio" name="grade" id="pre" id="pre" required> Pre-School</label>
+                                <label for="1"> <input type="radio" name="grade" id="1" value="1" required> 1st</label>
+                                <label for="2"> <input type="radio" name="grade" id="2" value="2" required> 2st</label>
+                                <label for="3"> <input type="radio" name="grade" id="3" value="3" required> 3st</label>
+                                <label for="4"> <input type="radio" name="grade" id="4" value="4" required> 4st</label>
+                                <label for="5"> <input type="radio" name="grade" id="5" value="5" required> 5st</label>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
+            <fieldset>
+                <legend>Which elementary school do you live near?</legend>
+                <table class="formulario">
+                        <tr>
+                            <td colspan="2"><h4><span>Closest School:</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td> <div class="filaform"><label for="aj"> <input type="radio" name="school" id="aj" value="aj" required> AJ Katzenmaier</label></div></td>
+                            <td> <div class="filaform"><label for="mp"> <input type="radio" name="school" id="mp" value="mp" required>Marjorie P Hart</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="gr"> <input type="radio" name="school" id="gr" value="gr" required>Greenbay</label></div></td>
+                            <td><div class="filaform"><label for="ne"> <input type="radio" name="school" id="ne" value="ne" required> North Elementary</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="hy"> <input type="radio" name="school" id="hy" value="hy" required> Howard A Yeager</label></div></td>
+                            <td><div class="filaform"><label for="se"> <input type="radio" name="school" id="se" value="se" required>South Elementary</label></div></td>
+                        </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>What position(s) do you normally play? (check all that apply)</legend>
+                <table class="formulario">
+                        <tr>
+                            <td> <div class="filaform"><label for="fordw"> <input type="checkbox" name="position" id="fordw" value="fordw" required> Forward</label></div></td>
+                            <td> <div class="filaform"><label for="mid"> <input type="checkbox" name="position" id="mid" value="mid" required>Midfield</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="def"> <input type="checkbox" name="position" id="def" value="def" required>Defense</label></div></td>
+                            <td><div class="filaform"><label for="goal"> <input type="checkbox" name="position" id="goal" value="goal" required> Goalkeeper</label></div></td>
+                        </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend class="izq">Uniform Size:</legend>
+                <table class="formulario">
+                        <tr>
+                            <td> <div class="filaform"><label for="sys"> <input type="radio" name="size" id="sys" value="sys" required> Youth Small</label></div></td>
+                            <td> <div class="filaform"><label for="sm"> <input type="radio" name="size" id="sm"  value="sm" required>Medium</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="sym"> <input type="radio" name="size" id="sym" value="sym" required>Youth Medium</label></div></td>
+                            <td><div class="filaform"><label for="sl"> <input type="radio" name="size" id="sl"  value="sl" required> Large</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="syl"> <input type="radio" name="size" id="syl" value="syl" required>Youth Large</label></div></td>
+                            <td><div class="filaform"><label for="sxl"> <input type="radio" name="size" id="sxl" value="sxl" required> Extra-Large</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="filaform"><label for="ss"> <input type="radio" name="size" id="ss"  value="ss" required>Small</label></div></td>
+                        </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <h2>Permission to Play</h2>
+                <p>I, the parent or guardian of the mino registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transprted to or from MDHL sponsored activities, wich transportation.
+                By signing below, I herebyagree andauth orizethe above. In addition, by signing below, also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                <table class="formulario">
+                    <tr>
+                        <td><label for="firma">Parent/GuardianSignature: <input class="c" type="text" name="firma" id="firma" required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hoy">Date:<input type="date" name="hoy" id="hoy" required></label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <button type="submit">Enviar</button>
         </form>
         </main>
-        
     </div>
     <footer></footer>
 </body>
