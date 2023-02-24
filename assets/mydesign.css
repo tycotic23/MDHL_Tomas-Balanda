@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -9,28 +9,37 @@
 html{
     overflow: auto;
 }
+.container{
+    display:flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    background-image: url("img/hockey-2.jpg");
+    background-size: cover;
+    /*outline: 1px solid red;*/
+}
 
 body{
     min-height: 100vh;
     background-color: white;
 }
 
+
 header{
     background-image: url("img/design1_image1.jpg");
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
     min-height: 37vh;
     min-width: 95vw;
-    max-width: 100vw;
     background-origin: content-box;
     background-position-y: -65vh;
-    position: relative;
-    
 }
 
 header h1{
     padding:1vh;
     padding-right: 1rem;
     font-size: 4.5vh;
-    font-weight: 900;
+    font-weight:900;
     width: 100%;
     background-color: rgb(95, 161, 153);
     text-align: right;
@@ -55,7 +64,7 @@ header h1{
 }
 
 .separator h2:hover{
-    transform: Scale(1.2);
+    transform: Scale(1);
 }
 
 .separator h2{
@@ -70,34 +79,30 @@ header h1{
                0px  1px 0px black,
               -1px  0px 0px black,
                0px -1px 0px black;
+               transform: Scale(1.2);
 }
 
-.separator img{
+header img{
     display: block;
-    position: absolute;
-    left: 1vw;
-    top: 9vh;
     min-height: 20vh;
     height: 30vh;
     transition: all 0.6s;
+    padding-left: 2rem;
 }
 
-.separator img:hover{
+header img:hover{
     transform: rotatez(-40deg);
 }
 
-
 nav{
-    min-width: 15vw;
-    display: inline-block;
-    min-height: 50vh;
+    margin-left: 1vw;
+    min-width: 12rem;
     padding: 1rem;
     padding-top: 2rem;
     vertical-align: top;
     background-color: rgb(33, 25, 21);
     border: 2px solid rgb(198, 72, 50);
-    border-top-width: 0;
-    border-bottom-width: 9px;
+    border-top-width: 0px;
 }
 
 nav a{
@@ -119,17 +124,15 @@ nav a{
 }
 
 a{
-    color: rgb(198, 72, 50);
+    color: rgb(248, 225, 46);
 }
 
 a:visited{
-    color: rgb(163, 31, 82);
+    color: rgb(214, 138, 37);
 }
 
 a:hover{
-    color:rgb(219, 96, 74);
-    font-weight: 600;
-    transform: rotatez(5deg);
+    color: rgb(253, 180, 24);
 }
 
 nav a:active{
@@ -146,7 +149,8 @@ nav a:focus{
 }
 
 nav a:hover{
-    background-color: rgb(219, 96, 74)
+    background-color: rgb(219, 96, 74);
+    transform: rotatez(5deg);
 }
 
 nav a[href="#"]{
@@ -155,25 +159,143 @@ nav a[href="#"]{
 
 main h3{
     font-weight: 600;
+    color: rgb(248, 225, 46);
 }
 
 main h2{
     color: rgb(198, 72, 50);
+    color: rgb(248, 225, 46);
+    border-bottom: 1px solid rgb(198, 72, 50);
+    text-shadow: 1px  0px 0px rgb(198, 72, 50),
+               0px  1px 0px rgb(198, 72, 50),
+              -1px  0px 0px rgb(198, 72, 50),
+               0px -1px 0px rgb(198, 72, 50);
+    margin-bottom: 1rem;
 }
 
-
 main{
-    display: inline-block;
     padding: 2rem;
     max-width: 70vw;
+    min-width: 5vw;
+    margin-right: 5vw;
+    margin-left: 2vw;
+    background-color: rgb(33, 25, 21);
+    color:white;
+    margin-top:4vh;
+    margin-bottom: 2vh;
+    border-radius: 40px;
+    border: 2px solid rgb(198, 72, 50);
+    overflow-x: auto;
+    flex-grow: 1;
+}
+
+main li,main p,main span{
+    color:white;
+}
+
+main li{
+    margin-left: 2.5rem;
+    font-weight: 600;
+    font-size: large;
+}
+
+main ul{
+    margin-left: 2rem;
+}
+
+main li li{
+    font-weight: 400;
+    font-size: medium;
 }
 
 main p{
     padding-left: 1.5rem;
+    font-weight: 400;
+    font-size: medium;
     padding-bottom: 2rem;
 }
 
+dl p{
+    padding-bottom: 0;
+}
+
+dd{
+    padding-bottom: 2rem;
+}
+
+
+main li p{
+    padding-left: 0;
+}
+
+
+
+main span{
+    font-weight: 600;
+    font-size: large;
+}
 footer{
     min-height: 5vh;
     background-color: rgb(198, 72, 50);
 }
+
+.nota{
+    padding-left: 0;
+}
+
+ul.none{
+    list-style-type:none;
+}
+
+ul.none,ul.none li{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.doble-col{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.doble-col li{
+    min-width: 10vw;
+    display: flex;
+}
+
+table p{
+    margin: 0;
+    padding: 0;
+}
+
+td,th{
+    border: 1px solid rgb(198, 72, 50);
+    padding: 10px;
+    text-align: center;
+    min-width: 1vw;
+}
+th p span{
+    color: rgb(248, 225, 46);
+    font-weight: 800;
+}
+
+th{
+    background-color: rgb(198, 72, 50);
+}
+table{
+    border: 2px solid rgb(198, 72, 50);
+    flex-grow: 1;
+}
+
+table p, table span{
+    font-size: small;
+}
+
+.tabla{
+    display:flex;
+    margin-bottom: 2rem;
+    min-width: none;
+}
+
+
+
+
